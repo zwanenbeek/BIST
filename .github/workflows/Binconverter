@@ -1,0 +1,16 @@
+# Python Program - Convert Hexadecimal to Binary
+print ("I will help you with converting binary code :)")
+print ("denary to binary code")
+print ("Type your number between 1-128 down here:")
+NumUser = int(input())
+MaxNumber = 128
+binstring = []
+while MaxNumber >= 1:
+	print (MaxNumber)
+	if NumUser > MaxNumber:
+		  binstring.append("1")
+		  NumUser  = NumUser - MaxNumber
+	else:	
+		binstring.append("0")
+	MaxNumber = MaxNumber// 2
+print (binstring)
